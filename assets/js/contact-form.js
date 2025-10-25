@@ -1,18 +1,14 @@
-/**
- * Contact Form (Formspree) AJAX handling
- */
 const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-  const loading = contactForm.querySelector(".loading");
-  const errorMsg = contactForm.querySelector(".error-message");
-  const sentMsg = contactForm.querySelector(".sent-message");
+const sendBtn = document.getElementById("sendBtn");
 
+if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    loading.style.display = "block";
-    errorMsg.style.display = "none";
-    sentMsg.style.display = "none";
+    const originalText = sendBtn.innerText;
+
+    sendBtn.disabled = true;
+    sendBtn.innerText = "Sending...";
 
     const formData = new FormData(contactForm);
 
@@ -21,21 +17,37 @@ if (contactForm) {
       body: formData,
       headers: { Accept: "application/json" },
     })
-      .then((response) => response.json())
+      .then((response) => response.json()) 
       .then((data) => {
-        loading.style.display = "none";
-        if (data.ok || data.success) {
-          sentMsg.style.display = "block";
+        if (data.ok) {
+          sendBtn.innerText = "Message sent!";
+          sendBtn.classList.add("btn-success");
+          sendBtn.classList.remove("btn-primary");
           contactForm.reset();
         } else {
-          errorMsg.style.display = "block";
-          errorMsg.innerText = "Failed to send message. Please try again.";
+          sendBtn.innerText = "Failed to send";
+          sendBtn.classList.add("btn-danger");
+          sendBtn.classList.remove("btn-primary");
         }
+
+        setTimeout(() => {
+          sendBtn.disabled = false;
+          sendBtn.innerText = originalText;
+          sendBtn.classList.remove("btn-success", "btn-danger");
+          sendBtn.classList.add("btn-primary");
+        }, 3000);
       })
       .catch(() => {
-        loading.style.display = "none";
-        errorMsg.style.display = "block";
-        errorMsg.innerText = "Failed to send message. Please try again.";
+        sendBtn.innerText = "Failed to send";
+        sendBtn.classList.add("btn-danger");
+        sendBtn.classList.remove("btn-primary");
+
+        setTimeout(() => {
+          sendBtn.disabled = false;
+          sendBtn.innerText = originalText;
+          sendBtn.classList.remove("btn-danger");
+          sendBtn.classList.add("btn-primary");
+        }, 3000);
       });
   });
 }
