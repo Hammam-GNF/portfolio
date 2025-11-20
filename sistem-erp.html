@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sistem ERP – Portfolio Detail</title>
+  <meta name="description" content="ERP system built with Laravel - project detail page" />
+  <meta name="keywords" content="Laravel, ERP, Inventory, Finance, Portfolio" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sistem ERP — Integrated Basic ERP</h2>
+        <p>
+            A fully-custom ERP solution built with Laravel to streamline basic operational workflows,
+            including product management, inventory handling, financial transactions, and administrative reporting.
+            Designed with clean architecture, reusable components, and robust database relationships.
+        </p>
+        <!-- STATUS PROJECT -->
+        <div class="alert alert-warning mt-3" role="alert">
+            <i class="bi bi-tools me-1"></i>
+            <strong>Project Status:</strong> This project is still under active development and ongoing improvements.
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Left: media -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 900,
+                    "autoplay": { "delay": 5000 },
+                    "slidesPerView": 1,
+                    "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                  }
+                </script>
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/erp_dashboard.webp" class="img-fluid" alt="ERP Dashboard">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/erp_inventory.webp" class="img-fluid" alt="Inventory Module">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/erp_reports.webp" class="img-fluid" alt="Reports">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="thumbnail-grid mt-3">
+                <div class="row g-2">
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/erp_thumb1.png" class="img-fluid glightbox" />
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/erp_thumb2.png" class="img-fluid glightbox" />
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/erp_thumb3.png" class="img-fluid glightbox" />
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/erp_thumb4.png" class="img-fluid glightbox" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-badges mt-3">
+                <span>Laravel 10</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>REST API</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: content -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+
+              <div class="project-meta d-flex gap-3 mb-3">
+                <div class="meta-item d-flex align-items-center">
+                  <i class="bi bi-calendar-check me-2"></i>
+                  <span>2025</span>
+                </div>
+                <div class="meta-item d-flex align-items-center">
+                  <i class="bi bi-layers me-2"></i>
+                  <span>ERP · Inventory · Finance · Reporting</span>
+                </div>
+              </div>
+
+              <h2 class="project-title">Sistem ERP — School Operations & Resource Management</h2>
+
+              <div class="project-website mb-3">
+                <i class="bi bi-github me-2"></i>
+                <a href="https://github.com/Hammam-GNF/sistem-erp" target="_blank">Repository</a>
+              </div>
+
+              <p class="lead">
+                The system centralizes administrative and operational processes using Laravel’s MVC architecture,
+                Eloquent ORM relationships, and role-based access control. It focuses on clean functional flows,
+                efficient data handling, and modular development to support long-term scalability.
+              </p>
+
+              <div class="accordion project-accordion" id="erpProjectAccordion">
+
+                <!-- Overview -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#erp-collapse-1">
+                      <i class="bi bi-clipboard-data me-2"></i> Project Overview
+                    </button>
+                  </h2>
+                  <div id="erp-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#erpProjectAccordion">
+                    <div class="accordion-body">
+                      <p>
+                        Core modules include Product Management, Class Management, Inventory Tracking,
+                        Financial Ledger, Attendance, and Report Generation. The project emphasizes maintainability,
+                        reusable components, and clean data modeling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erp-collapse-2">
+                      <i class="bi bi-exclamation-triangle me-2"></i> Development Challenges
+                    </button>
+                  </h2>
+                  <div id="erp-collapse-2" class="accordion-collapse collapse" data-bs-parent="#erpProjectAccordion">
+                    <div class="accordion-body">
+                      <p>
+                        Ensuring clean data relation mapping, handling large CSV imports,
+                        and maintaining consistent validation rules across modules were notable development challenges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Solutions -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erp-collapse-3">
+                      <i class="bi bi-tools me-2"></i> Implemented Solutions
+                    </button>
+                  </h2>
+                  <div id="erp-collapse-3" class="accordion-collapse collapse" data-bs-parent="#erpProjectAccordion">
+                    <div class="accordion-body">
+                      <p>
+                        Implemented optimized database structures, form validation layers,
+                        transactional operations for critical processes, and clean controller-service separation
+                        for long-term maintainability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Features -->
+              <div class="project-features mt-4" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="bi bi-stars me-2"></i> Key Features</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <ul class="feature-list mb-0">
+                      <li><i class="bi bi-check2-circle me-2"></i> Product & Class Management</li>
+                      <li><i class="bi bi-check2-circle me-2"></i> Inventory & Asset Tracking</li>
+                      <li><i class="bi bi-check2-circle me-2"></i> Financial Ledger</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="feature-list mb-0">
+                      <li><i class="bi bi-check2-circle me-2"></i> Attendance & Reporting</li>
+                      <li><i class="bi bi-check2-circle me-2"></i> CSV Import</li>
+                      <li><i class="bi bi-check2-circle me-2"></i> Role-based Access Control</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="cta-buttons mt-4">
+                <a href="https://github.com/Hammam-GNF/sistem-erp" class="btn-view-project me-2" target="_blank">View Source</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>© 2025 — Sistem ERP • Built with Laravel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

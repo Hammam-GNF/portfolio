@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Danduk Skanda – Portfolio Details</title>
+  <meta name="description" content="Laravel-based school management system. Portfolio detail page.">
+  <meta name="keywords" content="Laravel, School Management, Portfolio, Web Developer">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Danduk Skanda – School Management System</h2>
+        <p>
+            A Laravel-based academic management platform designed to structure data about classes, students, departments, attendance, teachers, and academic years.
+            This project was built from scratch using an MVC approach and comprehensive CRUD features.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Left Side (Images) -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+
+              <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 1000,
+                    "autoplay": { "delay": 5000 },
+                    "slidesPerView": 1,
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    }
+                  }
+                </script>
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/danduk1.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/danduk2.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/danduk3.webp" class="img-fluid" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                <span>Laravel 10</span>
+                <span>MySQL</span>
+                <span>Bootstrap 5</span>
+                <span>Blade Templates</span>
+                <span>MVC Architecture</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Side (Content) -->
+          <div class="col-lg-6" data-aos="fade-left">
+
+            <div class="portfolio-details-content">
+
+              <div class="project-meta">
+                <div class="meta-item">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>2024</span>
+                </div>
+                <div class="meta-item">
+                  <i class="bi bi-layers"></i>
+                  <span>Fullstack Laravel Project</span>
+                </div>
+              </div>
+
+              <h2 class="project-title">Danduk Skanda – Laravel School Management Platform</h2>
+
+              <div class="project-website">
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/Hammam-GNF/danduk-skandaa" target="_blank">View Repository</a>
+              </div>
+
+              <p class="lead">
+                This system is designed to simplify the management of academic data such as classes, majors, students, attendance, subject teachers, and homeroom teachers.
+                All features are built using Laravel 10 and utilize complex database relationships to ensure data consistency.
+                </p>
+
+              <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+
+                <!-- Overview -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                      <i class="bi bi-clipboard-data me-2"></i> Project Overview
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p>
+                            Danduk Skanda consists of several core modules:
+                            class management, student data, homeroom teachers, attendance, subjects, and academic year.
+
+                            Each feature uses Laravel's MVC architecture with server-side validation, Eloquent relationships, and a UI built using Bootstrap 5.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Features -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                      <i class="bi bi-stars me-2"></i> Core Features
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>CRUD Kelas, Siswa, Jurusan, dan Mata Pelajaran</li>
+                        <li>Manajemen Wali Kelas & Guru Pengajar</li>
+                        <li>Sistem Presensi siswa</li>
+                        <li>Import data siswa via Excel</li>
+                        <li>Relasi database kompleks menggunakan Eloquent ORM</li>
+                        <li>Blade templating + Bootstrap untuk UI</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Development Notes -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                      <i class="bi bi-tools me-2"></i> Development Highlights
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>
+                        Focused on performance, data consistency, and ease of use.
+                        I ensured that each module was efficiently interconnected using hasMany, belongsTo, and many-to-many relationships when necessary.
+                        Additionally, an Excel import feature was added to speed up large data input.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="cta-buttons mt-4">
+                <a href="https://github.com/Hammam-GNF/danduk-skandaa" class="btn-view-project">View Repository</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>© Copyright <strong>Danduk Skanda</strong>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
