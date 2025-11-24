@@ -2574,6 +2574,13 @@ section,
   line-height: 1.6;
 }
 
+.portfolio-details .portfolio-details-content .project-overview .project-accordion .accordion-item .accordion-body li {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+
 .portfolio-details .portfolio-details-content .project-features {
   margin-bottom: var(--section-spacing);
 }
