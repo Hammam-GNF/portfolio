@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Detail</title>
+  <div data-include="/components/head.html"></div>
+</head>
+
+<body class="portfolio-details-page" data-page="portfolio">
+
+  <div data-include="/components/header.html"></div>
+
+  <main class="main">
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 id="pd-title"></h2>
+        <p id="pd-description"></p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- LEFT -->
+          <div class="col-lg-6">
+            <div id="pd-slider"></div>
+            <div id="pd-thumbnails" class="mt-3"></div>
+            <div id="pd-tech" class="tech-stack-badges mt-3"></div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-lg-6">
+            <div id="pd-meta"></div>
+            <h2 id="pd-project-title" class="project-title"></h2>
+            <div id="pd-links"></div>
+            <div id="pd-accordion"></div>
+            <div id="pd-cta" class="cta-buttons mt-4"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="/components/footer.html"></div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <div data-include="/components/scripts.html"></div>
+  
+  <!-- DATA -->
+  <script src="/assets/data/portfolios.js"></script>
+  <script src="/assets/js/portfolio-detail.js"></script>
+
+</body>
+</html>

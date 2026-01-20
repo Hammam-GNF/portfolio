@@ -1,0 +1,34 @@
+{
+  "manual-qa": {
+    "title": "GrowiaShop E-commerce",
+    "description": "Manual Quality Assurance project focusing on testing web-based e-learning features.",
+    "role": "Manual QA",
+    "year": "2025",
+    "client": "Growia E-Learning",
+    "projectTitle": "Growia E-Learning Platform Testing",
+    "tech": ["Manual Testing", "Regression Testing", "Defect Reporting"],
+    "images": [
+      "/assets/img/portfolio/growia.webp",
+      "/assets/img/portfolio/bug1.png",
+      "/assets/img/portfolio/bug2.png"
+    ],
+    "repo": null,
+    "visit": "https://5nags3iycnjh547.growia.education/"
+  },
+
+  "job-portal": {
+    "title": "Job Portal",
+    "description": "Web-based recruitment platform for employers and applicants.",
+    "role": "Fullstack Web Developer",
+    "year": "2024",
+    "client": "SMK N 2 Cilacap",
+    "projectTitle": "Job Portal — Laravel-Based Recruitment Platform",
+    "tech": ["Laravel", "MySQL", "Bootstrap"],
+    "images": [
+      "/assets/img/danduk-skanda/dashboard.png",
+      "/assets/img/danduk-skanda/users.png"
+    ],
+    "repo": "https://github.com/Hammam-GNF/danduk-skandaa",
+    "visit": null
+  }
+}

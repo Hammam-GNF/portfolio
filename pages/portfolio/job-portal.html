@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Job Portal System</title>
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page" data-page="portfolio">
+
+  <script src="/assets/js/include.js"></script>
+  <div data-include="/components/header.html"></div>
+
+  <main class="main">
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Job Portal System</h2>
+        <p class="project-subtitle">
+          Fullstack web application built as a React SPA consuming a Laravel 12 REST API,
+          featuring role-based access and real-world job recruitment workflows.
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <!-- Left Side (Images) -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+              <div class="main-image">
+                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                  <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 1000,
+                        "autoplay": {
+                          "delay": 6000
+                        },
+                        "effect": "creative",
+                        "creativeEffect": {
+                          "prev": {
+                            "shadow": true,
+                            "translate": [0, 0, -400]
+                          },
+                          "next": {
+                            "translate": ["100%", 0, 0]
+                          }
+                        },
+                        "slidesPerView": 1,
+                        "navigation": {
+                          "nextEl": ".swiper-button-next",
+                          "prevEl": ".swiper-button-prev"
+                        }
+                      }
+                  </script>
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/danduk-skanda/dashboard.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/danduk-skanda/users.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/danduk-skanda/classes.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-2 mt-3">
+                  <div class="col-3">
+                    <img src="/assets/img/danduk-skanda/nilai.png" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="/assets/img/danduk-skanda/presensi.png" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="/assets/img/danduk-skanda/edit-pembelajaran.png" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="/assets/img/danduk-skanda/delete.png" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                <span class="badge">Fullstack Web Development</span>
+                <span class="badge">React SPA</span>
+                <span class="badge">REST API</span>
+                <span class="badge">Role-Based System</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Side (Content) -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+              <div class="project-meta mb-3">
+                <div class="badge-wrapper">
+                  <span class="project-badge">Fullstack Web Developer</span>
+                </div>
+                <div class="date-client mt-2">
+                  <div class="meta-item"><i class="bi bi-calendar-check"></i> <span>2024</span></div>
+                  <div class="meta-item"><i class="bi bi-buildings"></i> <span>Data Induk SMK N 2 Cilacap</span></div>
+                </div>
+              </div>
+
+              <h2 class="project-title">Job Portal — React & Laravel REST API</h2>
+
+              <div class="project-website mb-3">
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/Hammam-GNF/job-portal-frontend" target="_blank">
+                  Frontend Repository (React)
+                </a>
+                <br>
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/Hammam-GNF/job-portal-api" target="_blank">
+                  Backend Repository (Laravel API)
+                </a>
+              </div>
+
+
+              <div class="project-overview">
+                <p class="lead">
+                  This project is a fullstack job portal system designed to simulate
+                  real-world recruitment processes. The frontend is built as a React SPA,
+                  while the backend provides a RESTful API using Laravel 12.
+                </p>
+
+                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+
+                  <div class="accordion-item" data-aos="fade-up">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-clipboard-data me-2"></i> Overview & Challenges
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Designed a clear separation between frontend and backend using REST API architecture.</li>
+                          <li>Implemented role-based access control for Admin, Employer, and Applicant.</li>
+                          <li>Built secure authentication flow between React frontend and Laravel API.</li>
+                          <li>Handled dynamic job listings, applications, and status tracking.</li>
+                          <li>Maintained consistent UX across different user roles.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-tools me-2"></i> Implemented Solutions
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-2" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Developed RESTful API endpoints with protected routes using auth middleware.</li>
+                          <li>Implemented role-based authorization aligned with frontend access control.</li>
+                          <li>Integrated React frontend with API for job listings, applications, and user actions.</li>
+                          <li>Designed scalable API structure to support future feature expansion.</li>
+                          <li>Used clean and reusable components to maintain frontend consistency.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="cta-buttons mt-4">
+                <!-- <a href="https://github.com/Hammam-GNF/job-portal-frontend" class="btn-view-project me-2">
+                  View Frontend Repo
+                </a>
+                <a href="https://github.com/Hammam-GNF/job-portal-api" class="btn btn-outline-secondary me-2">
+                  View Backend API
+                </a> -->
+                <a href="/pages/portfolio/index.html" class="btn btn-outline-secondary">
+                  Back to Portfolio
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="/components/footer.html"></div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- App JS -->
+  <script src="/assets/js/nav-active.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
